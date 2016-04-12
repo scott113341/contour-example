@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "5.10.1"
+
+
+script:
+  - npm install -g git-credential-env
+  - git config credential.helper "env --username=GITHUB_TOKEN"
+  - git config user.name "Travis CI"
+  - npm run deploy
