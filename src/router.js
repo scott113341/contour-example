@@ -12,6 +12,12 @@ export function replaceState(routes, path, state) {
 }
 
 
+export function hashChange(routes) {
+  const { path, state } = getState();
+  getHandler(routes, path)(state);
+}
+
+
 export function getHashUrl(path, state=false) {
   const stateString = state ? encodeURIComponent(JSON.stringify(state)) : '';
   return `/#/${path}/${stateString}`;

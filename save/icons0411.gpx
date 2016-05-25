@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="details.xsl"?>
+<gpx
+ version="1.1"
+ creator="BackCountry Navigator on Android"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns="http://www.topografix.com/GPX/1/1"
+ xmlns:topografix="http://www.topografix.com/GPX/Private/TopoGrafix/0/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.topografix.com/GPX/Private/TopoGrafix/0/1 http://www.topografix.com/GPX/Private/TopoGrafix/0/1/topografix.xsd">
+<wpt lat="37.76384496855824" lon="-122.48642206192018">
+<ele>0</ele>
+<time>2016-04-12T12:11:49Z</time>
+<name><![CDATA[22:11]]></name>
+<cmt><![CDATA[]]></cmt>
+<desc><![CDATA[]]></desc>
+<sym><![CDATA[airport]]></sym>
+</wpt>
+<wpt lat="37.76384496855824" lon="-122.48642206192018">
+<ele>0</ele>
+<time>2016-04-12T12:12:19Z</time>
+<name><![CDATA[22:12]]></name>
+<cmt><![CDATA[]]></cmt>
+<desc><![CDATA[]]></desc>
+<sym><![CDATA[alpine_hut]]></sym>
+</wpt>
+<wpt lat="37.76384496855824" lon="-122.48642206192018">
+<ele>0</ele>
+<time>2016-04-12T12:12:26Z</time>
+<name><![CDATA[22:12]]></name>
+<cmt><![CDATA[]]></cmt>
+<desc><![CDATA[]]></desc>
+<sym><![CDATA[alpine_hut_lz]]></sym>
+</wpt>
+<wpt lat="37.76384496855824" lon="-122.48642206192018">
+<ele>0</ele>
+<time>2016-04-12T12:12:31Z</time>
+<name><![CDATA[22:12]]></name>
+<cmt><![CDATA[]]></cmt>
+<desc><![CDATA[]]></desc>
+<sym><![CDATA[alpine_hut_private]]></sym>
+</wpt>
+<wpt lat="37.76384496855824" lon="-122.48642206192018">
+<ele>0</ele>
+<time>2016-04-12T12:12:38Z</time>
+<name><![CDATA[22:12]]></name>
+<cmt><![CDATA[]]></cmt>
+<desc><![CDATA[]]></desc>
+<sym><![CDATA[alpine_hut_winter]]></sym>
+</wpt>
+<wpt lat="37.76384496855824" lon="-122.48642206192018">
+<ele>0</ele>
+<time>2016-04-12T12:12:46Z</time>
+<name><![CDATA[22:12]]></name>
+<cmt><![CDATA[]]></cmt>
+<desc><![CDATA[]]></desc>
+<sym><![CDATA[amusement]]></sym>
+</wpt>
+<wpt lat="37.76384496855824" lon="-122.48642206192018">
+<ele>0</ele>
+<time>2016-04-12T12:12:51Z</time>
+<name><![CDATA[22:12]]></name>
+<cmt><![CDATA[]]></cmt>
+<desc><![CDATA[]]></desc>
+<sym><![CDATA[anchor prohibited]]></sym>
+</wpt>
+<wpt lat="37.76384496855824" lon="-122.48642206192018">
+<ele>0</ele>
+<time>2016-04-12T12:12:55Z</time>
+<name><![CDATA[22:12]]></name>
+<cmt><![CDATA[]]></cmt>
+<desc><![CDATA[]]></desc>
+<sym><![CDATA[u.arcu]]></sym>
+</wpt>
+<wpt lat="37.76384496855824" lon="-122.48642206192018">
+<ele>0</ele>
+<time>2016-04-12T12:12:58Z</time>
+<name><![CDATA[22:12]]></name>
+<cmt><![CDATA[]]></cmt>
+<desc><![CDATA[]]></desc>
+<sym><![CDATA[archaeological]]></sym>
+</wpt>
+<wpt lat="37.76384496855824" lon="-122.48642206192018">
+<ele>0</ele>
+<time>2016-04-12T12:13:02Z</time>
+<name><![CDATA[22:13]]></name>
+<cmt><![CDATA[]]></cmt>
+<desc><![CDATA[]]></desc>
+<sym><![CDATA[area]]></sym>
+</wpt>
+<wpt lat="37.76384496855824" lon="-122.48642206192018">
+<ele>0</ele>
+<time>2016-04-12T12:13:06Z</time>
+<name><![CDATA[22:13]]></name>
+<cmt><![CDATA[]]></cmt>
+<desc><![CDATA[]]></desc>
+<sym><![CDATA[arroyo]]></sym>
+</wpt>
+<wpt lat="37.76384496855824" lon="-122.48642206192018">
+<ele>0</ele>
+<time>2016-04-12T12:13:15Z</time>
+<name><![CDATA[22:13]]></name>
+<cmt><![CDATA[]]></cmt>
+<desc><![CDATA[]]></desc>
+<sym><![CDATA[atm]]></sym>
+</wpt>
+<wpt lat="37.76384496855824" lon="-122.48642206192018">
+<ele>0</ele>
+<time>2016-04-12T12:13:19Z</time>
+<name><![CDATA[22:13]]></name>
+<cmt><![CDATA[]]></cmt>
+<desc><![CDATA[]]></desc>
+<sym><![CDATA[attraction]]></sym>
+</wpt>
+<wpt lat="37.76384496855824" lon="-122.48642206192018">
+<ele>0</ele>
+<time>2016-04-12T12:13:24Z</time>
+<name><![CDATA[22:13]]></name>
+<cmt><![CDATA[]]></cmt>
+<desc><![CDATA[]]></desc>
+<sym><![CDATA[bakery]]></sym>
+</wpt>
+<wpt lat="37.76384496855824" lon="-122.48642206192018">
+<ele>0</ele>
+<time>2016-04-12T12:13:30Z</time>
+<name><![CDATA[22:13]]></name>
+<cmt><![CDATA[]]></cmt>
+<desc><![CDATA[]]></desc>
+<sym><![CDATA[s.bank]]></sym>
+</wpt>
+<wpt lat="37.76384496855824" lon="-122.48642206192018">
+<ele>0</ele>
+<time>2016-04-12T12:13:33Z</time>
+<name><![CDATA[22:13]]></name>
+<cmt><![CDATA[]]></cmt>
+<desc><![CDATA[]]></desc>
+<sym><![CDATA[bar]]></sym>
+</wpt>
+<wpt lat="37.76384496855824" lon="-122.48642206192018">
+<ele>0</ele>
+<time>2016-04-12T12:13:37Z</time>
+<name><![CDATA[22:13]]></name>
+<cmt><![CDATA[]]></cmt>
+<desc><![CDATA[]]></desc>
+<sym><![CDATA[biergarten]]></sym>
+</wpt>
+<wpt lat="37.76384496855824" lon="-122.48642206192018">
+<ele>0</ele>
+<time>2016-04-12T12:13:44Z</time>
+<name><![CDATA[22:13]]></name>
+<cmt><![CDATA[]]></cmt>
+<desc><![CDATA[]]></desc>
+<sym><![CDATA[camp_site]]></sym>
+</wpt>
+<wpt lat="37.76384496855824" lon="-122.48642206192018">
+<ele>0</ele>
+<time>2016-04-12T12:13:52Z</time>
+<name><![CDATA[22:13]]></name>
+<cmt><![CDATA[]]></cmt>
+<desc><![CDATA[]]></desc>
+<sym><![CDATA[waterfall]]></sym>
+</wpt>
+<wpt lat="37.76384496855824" lon="-122.48642206192018">
+<ele>0</ele>
+<time>2016-04-12T12:14:56Z</time>
+<name><![CDATA[22:14]]></name>
+<cmt><![CDATA[]]></cmt>
+<desc><![CDATA[]]></desc>
+<sym><![CDATA[s.trig]]></sym>
+</wpt>
+<wpt lat="37.76384496855824" lon="-122.48642206192018">
+<ele>0</ele>
+<time>2016-04-12T12:15:11Z</time>
+<name><![CDATA[22:15]]></name>
+<cmt><![CDATA[]]></cmt>
+<desc><![CDATA[]]></desc>
+<sym><![CDATA[square, green]]></sym>
+</wpt>
+</gpx>

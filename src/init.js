@@ -1,7 +1,7 @@
 import csjs from 'csjs-inject';
 
 import routes from './routes.js';
-import { getState, replaceState } from './router.js';
+import { getState, replaceState, hashChange } from './router.js';
 
 
 export const styles = csjs`
@@ -22,4 +22,5 @@ export function initPage() {
   document.body.appendChild(rootElement);
   const { path, state } = getState();
   replaceState(routes, path, state);
+  window.addEventListener('hashchange', () => hashChange(routes));
 }
