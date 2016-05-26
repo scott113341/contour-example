@@ -1,7 +1,7 @@
 import L from 'leaflet';
 
 import { rootElement } from '../../init.js';
-import { getMapConfig, filterFeaturesOfType, TILES } from '../../config.js';
+import { getConfig, getMapConfig, filterFeaturesOfType, TILES } from '../../config.js';
 
 import data from './data.json';
 import { addPointToMap, addLineToMap } from './map.js';
@@ -36,10 +36,10 @@ export default function(state) {
 
 
 function drawMap(map) {
-  const config = getMapConfig(data);
-  // console.log(config);
+  const config = getConfig(data);
+  const mapConfig = getMapConfig(config);
 
-  map.setView([40.96, -122.93], 12);
+  map.setView(mapConfig.coordinates, mapConfig.zoom);
   L.tileLayer(TILES.calTopo, { maxZoom: 16 }).addTo(map);
   L.tileLayer(TILES.calTopoRelief, { maxZoom: 16, opacity: 0.25 }).addTo(map);
 
@@ -51,7 +51,7 @@ function drawMap(map) {
 }
 
 function drawGraph(graph, map) {
-  const config = getMapConfig(data);
+  const config = getConfig(data);
 
   Object.keys(graph).forEach(key => {
     const node = graph[key];
@@ -62,7 +62,6 @@ function drawGraph(graph, map) {
       },
       geometry: { coordinates: node.coordinates },
     };
-    // console.log(feature);
     addPointToMap(feature, map, config);
   });
 }

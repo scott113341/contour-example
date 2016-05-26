@@ -32,10 +32,15 @@ export const TILES = {
 };
 
 
-export function getMapConfig(featureCollection) {
+export function getConfig(featureCollection) {
   return featureCollection.features
     .filter(feature => feature.properties.name === METADATA_KEY)
     .map(feature => getFeatureProperties(feature));
+}
+
+
+export function getMapConfig(config) {
+  return config.find(c => c.folder === METADATA_KEY);
 }
 
 
