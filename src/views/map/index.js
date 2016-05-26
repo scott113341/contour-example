@@ -28,6 +28,10 @@ export default function(state) {
   };
 
   drawMap(map);
+
+  const graph = buildGraph();
+  console.log(graph);
+  drawGraph(graph, map);
 }
 
 
@@ -45,6 +49,28 @@ function drawMap(map) {
   const lineFeatures = data.features.filter(filterFeaturesOfType('LineString'));
   lineFeatures.forEach(lf => addLineToMap(lf, map, config));
 }
+
+function drawGraph(graph, map) {
+  const config = getMapConfig(data);
+
+  Object.keys(graph).forEach(key => {
+    const node = graph[key];
+    const feature = {
+      properties: {
+        name: key,
+        comments: '',
+      },
+      geometry: { coordinates: node.coordinates },
+    };
+    // console.log(feature);
+    addPointToMap(feature, map, config);
+  });
+}
+
+
+
+
+
 
 
 var places = [];
@@ -71,7 +97,6 @@ function buildGraph() {
   const geoCache = makeGeoCache(data);
   console.log(geoCache);
 
-
   // create graph nodes
   Object.keys(geoCache).forEach(key => {
     const features = geoCache[key];
@@ -79,6 +104,7 @@ function buildGraph() {
       const node = {
         features,
         edges: [],
+        coordinates: key.split(',').map(c => parseFloat(c)),
       };
       graph[key] = node;
     }
@@ -121,14 +147,13 @@ function buildGraph() {
       });
   });
 
-  console.log(graph);
-
   Object.keys(graph).forEach(key => {
     const node = graph[key];
     console.log(`Node at ${key} ${thingsAtNode(node)} has edges: ${node.edges.map(e => `${thingsAtNode(e.to)}(${e.weight})`)}`);
   });
+
+  return graph;
 }
-buildGraph();
 
 
 function coordinateString(coordinates) {
