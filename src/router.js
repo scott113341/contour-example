@@ -1,12 +1,12 @@
 export function pushState(routes, path, state) {
-  console.log('pushState', getHashUrl(path, state));
+  // console.log('pushState', getHashUrl(path, state));
   history.pushState(null, '', getHashUrl(path, state));
   getHandler(routes, path)(state);
 }
 
 
 export function replaceState(routes, path, state) {
-  console.log('replaceState', getHashUrl(path, state));
+  // console.log('replaceState', getHashUrl(path, state));
   history.replaceState(null, '', getHashUrl(path, state));
   getHandler(routes, path)(state);
 }
@@ -14,6 +14,7 @@ export function replaceState(routes, path, state) {
 
 export function hashChange(routes) {
   const { path, state } = getState();
+  // console.log('hashChange', getHashUrl(path, state));
   getHandler(routes, path)(state);
 }
 

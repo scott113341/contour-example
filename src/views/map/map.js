@@ -11,11 +11,13 @@ export function addPointToMap(pointFeature, map, config) {
     icon: getIcon(props.icon),
     riseOnHover: true,
   };
-  const marker = L.marker(coordinates, markerConfig);
+  const marker = L.marker(coordinates, markerConfig)
+    .on('click', map.contour.onMarkerClick);
+  marker.swag = pointFeature;
 
   if (props.popup !== false) marker.bindPopup(props.name);
   if (props.show !== false) marker.addTo(map);
-  
+
   return marker;
 }
 
@@ -23,13 +25,10 @@ export function addPointToMap(pointFeature, map, config) {
 export function addLineToMap(lineFeature, map, config) {
   const props = getFeatureProps(lineFeature, config);
   const coordinates = lineFeature.geometry.coordinates.map(c => c.reverse());
-  const lineConfig = Object.assign(
-    {},
-    {
-      title: props.name,
-    },
-    props.style
-  );
+  const lineConfig = {
+    title: props.name,
+    ...props.style,
+  };
   const line = L.polyline(coordinates, lineConfig);
 
   if (props.popup !== false) line.bindPopup(props.name);
