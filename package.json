@@ -13,7 +13,8 @@
   ],
   "scripts": {
     "clean": "rm -r -f build/ && mkdir build/",
-    "build": "npm run clean && npm run build:js && npm run build:static",
+    "update": "node refresh-data.js 6M9A",
+    "build": "npm run clean && && npm run update && npm run build:js && npm run build:static",
     "build:js": "browserify src/index.js -t babelify | uglifyjs -cm > build/app.js",
     "build:static": "cp -r src/static/* build/",
     "develop": "npm run clean && npm run build:static && budo src/index.js:app.js --port 3000 --dir build --live -- -t babelify",
