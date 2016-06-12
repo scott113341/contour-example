@@ -56,7 +56,6 @@ function drawGraph(data, graph, map) {
 
   Object.keys(graph).forEach(key => {
     const node = graph[key];
-    console.log(node);
     const feature = {
       properties: {
         name: key + thingsAtNode(node),
